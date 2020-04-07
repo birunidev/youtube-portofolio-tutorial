@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap");
+
+body {
+  font-family: "Inter";
+  margin: 0;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  .navbar {
+    &__brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__logo {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 10px 0px;
+
+        span {
+          color: #f6490d;
+        }
+      }
+
+      #bars {
+        font-size: 30px;
+        color: #f6490d;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.sidedrawer {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  height: 100vh;
+  background: #1dced8;
+  transition: 0.4s ease;
+  width: 60%;
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: right;
+  opacity: 0;
+  z-index: 4;
+
+  ul {
+    margin-top: 100px;
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 40px 0;
+
+      a {
+        color: #000000;
+        text-decoration: none;
+        transition: 0.4s ease;
+
+        &:hover {
+          border-bottom: 3px solid #f6490d;
+        }
+      }
+    }
+  }
+}
+.sidedrawer.active {
+  right: 0;
+  opacity: 1;
+}
+
+.backdrop {
+  z-index: 3;
+  height: 100vh;
+  background: rgba($color: #000000, $alpha: 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  display: none;
+}
+.backdrop.show {
+  opacity: 1;
+  display: block;
+}

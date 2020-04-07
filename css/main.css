@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap");
+body {
+  font-family: "Inter";
+  margin: 0;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header .navbar__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar__brand__logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+header .navbar__brand__logo span {
+  color: #f6490d;
+}
+
+header .navbar__brand #bars {
+  font-size: 30px;
+  color: #f6490d;
+  cursor: pointer;
+}
+
+.sidedrawer {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  height: 100vh;
+  background: #1dced8;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 60%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px;
+  text-align: right;
+  opacity: 0;
+  z-index: 4;
+}
+
+.sidedrawer ul {
+  margin-top: 100px;
+  list-style: none;
+  padding: 0;
+}
+
+.sidedrawer ul li {
+  margin: 40px 0;
+}
+
+.sidedrawer ul li a {
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.sidedrawer ul li a:hover {
+  border-bottom: 3px solid #f6490d;
+}
+
+.sidedrawer.active {
+  right: 0;
+  opacity: 1;
+}
+
+.backdrop {
+  z-index: 3;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  display: none;
+}
+
+.backdrop.show {
+  opacity: 1;
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
