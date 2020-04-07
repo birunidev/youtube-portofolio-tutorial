@@ -45,8 +45,11 @@
     }
 
     img {
-      width: 100%;
+      width: 104.7%;
       max-width: 600px;
+      @include tablet {
+        width: 101.7%;
+      }
     }
   }
 

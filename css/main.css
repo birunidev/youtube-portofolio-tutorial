@@ -220,8 +220,14 @@ header .navbar__list {
 }
 
 .jumbotron__image img {
-  width: 100%;
+  width: 104.7%;
   max-width: 600px;
+}
+
+@media (min-width: 768px) {
+  .jumbotron__image img {
+    width: 101.7%;
+  }
 }
 
 .jumbotron__content {
