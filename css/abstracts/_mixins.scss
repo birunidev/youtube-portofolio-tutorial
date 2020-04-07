@@ -9,3 +9,13 @@
     @content;
   }
 }
+
+@mixin logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0px;
+
+  span {
+    color: $secondaryText;
+  }
+}

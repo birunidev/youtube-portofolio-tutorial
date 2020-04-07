@@ -9,12 +9,18 @@
 
 // layouts
 @import "./layouts/navbar";
+@import "./layouts/footer";
 
 // components
 @import "./components/sidedrawer";
 @import "./components/jumbotron";
 @import "./components/about";
 @import "./components/showcase";
+@import "./components/testimonial";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Inter";

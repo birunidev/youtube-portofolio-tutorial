@@ -6,19 +6,19 @@
     <title>Steward Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body id="home">
     <div class="sidedrawer">
       <ul class="list__component">
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">work</a></li>
-        <li><a href="#">testimonials</a></li>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#testimonial">testimonials</a></li>
       </ul>
     </div>
     <div class="backdrop"></div>
 
     <!-- Navbar -->
-    <header>
+    <header id="navbar">
       <div class="container">
         <nav class="navbar">
           <div class="navbar__brand">
@@ -35,10 +35,10 @@
           </div>
           <div class="navbar__list">
             <ul class="list__component">
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">work</a></li>
-              <li><a href="#">testimonials</a></li>
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#work">work</a></li>
+              <li><a href="#testimonial">testimonials</a></li>
             </ul>
           </div>
         </nav>
@@ -97,19 +97,19 @@
     <!-- Jumbotron -->
     <div class="container">
       <!-- About -->
-      <section>
+      <section id="about">
         <div class="about">
-          <div class="about__image">
+          <div class="about__image" data-jarallax-element="80">
             <img src="assets/about.png" alt="" />
           </div>
           <div class="about__content">
-            <h2>
+            <h2 data-jarallax-element="-100">
               Have 4+ years <br />
               Experience <br />
               Building <br />
               <span>Digital Products</span>
             </h2>
-            <p class="content">
+            <p class="content" data-jarallax-element="-60">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
               sed vitae enim dui elementum, amet. Ultrices congue enim justo,
               risus. Quis amet, at sit arcu, id arcu. Iaculis interdum sem
@@ -120,7 +120,7 @@
       </section>
       <!-- About -->
 
-      <section>
+      <section id="work">
         <div class="showcase">
           <div class="showcase__text">
             <h2>Showcase</h2>
@@ -144,7 +144,50 @@
           </div>
         </div>
       </section>
+
+      <section id="testimonial">
+        <div class="testimonial">
+          <h2>Happy Clients</h2>
+
+          <div class="profile">
+            <div class="profile__picture 0">
+              <img src="assets/client-2.png" alt="" id="person-0" />
+            </div>
+
+            <div class="profile__picture 1">
+              <img src="assets/client-1.png" alt="" id="person-1" />
+            </div>
+            <div class="profile__picture 2">
+              <img src="assets/client-3.png" alt="" id="person-2" />
+            </div>
+          </div>
+
+          <div class="testimonial__bio">
+            <p class="testimonial__bio__name"></p>
+            <p class="testimonial__bio__role"></p>
+          </div>
+          <div class="testimonial__content">
+            <p class="testimonial__content__text"></p>
+            <div class="testimonial__content__stars">
+              <!-- <span
+                class="iconify star"
+                data-icon="entypo:star"
+                data-inline="false"
+              ></span> -->
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <footer>
+      <a href="#" class="logo">Logo<span>.</span> </a>
+      <p>All Right Reserved by @birunidev</p>
+    </footer>
+
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax-element.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
 
     <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
     <script src="js/script.js"></script>
